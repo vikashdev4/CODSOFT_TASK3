@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    padding:15px;
+}
+
+/* Calculator */
+
+.calculator{
+    width:380px;
+    padding:20px;
+    border-radius:22px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    box-shadow:0 0 30px rgba(56,189,248,0.25);
+}
+
+/* Developer Section */
+
+.brand{
+    text-align:center;
+    margin-bottom:8px;
+    padding-bottom:8px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.brand img{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid #38bdf8;
+    margin-bottom:5px;
+}
+
+.brand h3{
+    color:white;
+    font-size:1rem;
+    font-weight:600;
+}
+
+/* Title */
+
+.calculator-title{
+    text-align:center;
+    margin:12px 0;
+    font-size:1.7rem;
+    font-weight:800;
+    color:#38bdf8;
+
+    text-shadow:
+        0 0 8px rgba(56,189,248,0.6),
+        0 0 15px rgba(56,189,248,0.3);
+}
+
+/* Display */
+
+#display{
+    width:100%;
+    height:68px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    background:#111827;
+    color:white;
+    text-align:right;
+    font-size:1.9rem;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+/* Buttons Grid */
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:8px;
+}
+
+button{
+    height:58px;
+    border:none;
+    border-radius:12px;
+    font-size:1.2rem;
+    cursor:pointer;
+    background:#1f2937;
+    color:white;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 12px rgba(56,189,248,0.4);
+}
+
+button:active{
+    transform:scale(0.96);
+}
+
+/* Special Buttons */
+
+.operator{
+    background:#f59e0b;
+}
+
+.special{
+    background:#ef4444;
+}
+
+.equal{
+    background:linear-gradient(
+        135deg,
+        #3b82f6,
+        #8b5cf6
+    );
+}
+
+/* Footer */
+
+.footer-brand{
+    margin-top:12px;
+    text-align:center;
+    color:#94a3b8;
+    font-size:0.85rem;
+}
+
+/* Responsive */
+
+@media(max-width:450px){
+
+    .calculator{
+        width:100%;
+        max-width:350px;
+        padding:18px;
+    }
+
+    .calculator-title{
+        font-size:1.5rem;
+    }
+
+    #display{
+        height:60px;
+        font-size:1.6rem;
+    }
+
+    button{
+        height:52px;
+        font-size:1.1rem;
+    }
+
+    .footer-brand{
+        font-size:0.75rem;
+    }
+}

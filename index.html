@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Calculator | Vikash Dhakad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <!-- Developer Info -->
+
+        <div class="brand">
+            <img src="admin.jpg" alt="Vikash">
+
+            <h3>Vikash Dhakad</h3>
+        </div>
+
+        <!-- Title -->
+
+        <h1 class="calculator-title">
+            🧮 Smart Calculator
+        </h1>
+
+        <!-- Display -->
+
+        <input type="text" id="display" readonly>
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <button class="special" onclick="clearDisplay()">AC</button>
+            <button class="special" onclick="deleteLast()">DEL</button>
+            <button class="operator" onclick="append('%')">%</button>
+            <button class="operator" onclick="append('/')">÷</button>
+
+            <button onclick="append('7')">7</button>
+            <button onclick="append('8')">8</button>
+            <button onclick="append('9')">9</button>
+            <button class="operator" onclick="append('*')">×</button>
+
+            <button onclick="append('4')">4</button>
+            <button onclick="append('5')">5</button>
+            <button onclick="append('6')">6</button>
+            <button class="operator" onclick="append('-')">−</button>
+
+            <button onclick="append('1')">1</button>
+            <button onclick="append('2')">2</button>
+            <button onclick="append('3')">3</button>
+            <button class="operator" onclick="append('+')">+</button>
+
+            <button onclick="append('00')">00</button>
+            <button onclick="append('0')">0</button>
+            <button onclick="append('.')">.</button>
+
+            <button class="equal" onclick="calculate()">=</button>
+
+        </div>
+
+        <div class="footer-brand">
+            Developed with ❤️ by Vikash Dhakad
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
