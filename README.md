@@ -112,13 +112,7 @@ https://github.com/vikashdev4/CODSOFT_TASK3
 
 Live Website:
 
-(Add your GitHub Pages link here)
-
-Example:
-
 https://vikashdev4.github.io/CODSOFT_TASK3/
-
----
 
 ## 👨‍💻 Developed By
 
@@ -142,12 +136,6 @@ Through this project, I improved my understanding of:
 * Responsive Web Design
 * UI/UX Fundamentals
 * Front-End Development Concepts
-
----
-
-## 📄 License
-
-This project is created for educational and internship purposes.
 
 ---
 
